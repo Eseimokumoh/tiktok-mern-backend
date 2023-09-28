@@ -11,7 +11,7 @@ const port = process.env.PORT || 9000;
 
 // middlewares
 app.use(express.json());
-app.use('/api', createProxyMiddleware({ target: 'https://tiktok-mern-backend-production.up.railway.app/', changeOrigin: true }));
+app.use('/api', createProxyMiddleware({ target: 'https://tiktok-mern-backend-production.up.railway.app', changeOrigin: true }));
 // app.use((req, res, next) => {
 //   res.header('Access-Control-Allow-Origin', '*');
 //   res.header('Access-Control-Allow-Headers', '*');
