@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import Data from './data.js';
 import Videos from './dbModel.js';
-
+import cors from 'cors';
 
 
 // app config
@@ -11,11 +11,7 @@ const port = process.env.PORT || 9000;
 
 // middlewares
 app.use(express.json());
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "*");
-  next();
-});
+app.use(cors());
 
 
 // DB config
