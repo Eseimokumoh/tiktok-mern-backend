@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import Data from './data.js';
 import Videos from './dbModel.js';
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
 
 // app config
@@ -10,11 +11,12 @@ const port = process.env.PORT || 9000;
 
 // middlewares
 app.use(express.json());
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', '*');
-  next();
-});
+app.use('/api', createProxyMiddleware({ target: 'https://tiktok-mern-backend-production.up.railway.app/', changeOrigin: true }));
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Headers', '*');
+//   next();
+// });
 
 
 // DB config
