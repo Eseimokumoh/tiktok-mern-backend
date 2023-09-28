@@ -7,11 +7,16 @@ import cors from 'cors';
 
 // app config
 const app = express();
+const corsOptions = {
+  origin: 'http://localhost:3000', // Replace with your frontend's URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Enable credentials (cookies, authorization headers)
+};
 const port = process.env.PORT || 9000;
 
 // middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 // DB config
