@@ -1,6 +1,6 @@
 const data = [
     {
-        url: "https://www.tiktok.com/@funvibesfusion/video/7246783744319720711",
+        url: "https://s2.dmcdn.net/v/SyK3w1Zl3_FBqod3a/x480",
         channel: "ruhggedDev",
         song: "Waste My Hate On You",
         likes: "48921",
@@ -9,7 +9,7 @@ const data = [
         shares: "700",
     },
      {
-        url: "https://www.tiktok.com/@trendy.soup/video/7170929061726833921",
+        url: "https://s2.dmcdn.net/v/Uj0uH1Z_TRCppuC-Q/x240",
         channel: "ssssangha",
         song: "Waste My Hate On You",
         likes: "37921",
