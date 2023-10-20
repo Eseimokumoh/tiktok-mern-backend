@@ -1,6 +1,6 @@
 const data = [
     {
-        url: "https://s2.dmcdn.net/v/SyK3w1Zl3_FBqod3a/x480",
+        url: "https://v4.cdnpk.net/videvo_files/video/free/2019-01/large_watermarked/190111_04_TaksinBridge_Drone_02_FPpreview.mp4",
         channel: "ruhggedDev",
         song: "Waste My Hate On You",
         likes: "48921",
@@ -9,7 +9,7 @@ const data = [
         shares: "700",
     },
      {
-        url: "https://s2.dmcdn.net/v/Uj0uH1Z_TRCppuC-Q/x240",
+        url: "https://v4.cdnpk.net/videvo_files/video/free/video0483/large_watermarked/_import_60d962f06b3ef8.86089157_FPpreview.mp4",
         channel: "ssssangha",
         song: "Waste My Hate On You",
         likes: "37921",
